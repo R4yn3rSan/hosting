@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Linkera</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="logo/Imagen.png" alt="Logo Linkera" class="logo" />
+    <div class="menu-items">
+    <div class="actions">
+  <a href="https://gofile.io/d/CV0n2P" target="_blank" class="promo-button">🎬 Promotional Video</a>
+  
+</div>
+      <h4><i class="fa-regular fa-heart icono_de_corazon"></i>Favorites</h4>
+      <h4 id="btn-login"><i class="fa-solid fa-user icono_usuario"></i>Log In</h4>
+      <h4 id="btn-menu" style="position: relative;">
+        <i class="fa-solid fa-bars icono_menu"></i>Menu
+       <a href="help.html" id="dropdown" class="dropdown" style="text-decoration: none; color: inherit;">
+  <i class="fa-solid fa-circle-question" style="margin-right: 8px; color: #007bff"></i>
+  Help and Support
+</a>
 
+      </h4>
+    </div>
+  </header>
+
+  <!-- Modal Overlay + Login Modal -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc" tabindex="-1">
+    <div class="login-modal">
+      <button class="close-btn" aria-label="Cerrar modal" id="close-modal">&times;</button>
+      <h3 id="modalTitle">Log In</h3>
+      <input type="email" placeholder="Email" aria-label="Email" />
+      <input type="password" placeholder="Password" aria-label="Password" />
+      <button>Log</button>
+    </div>
+  </div>
+
+  <h2>Save on your next order</h2>
+  <h4>We compare video game prices from multiple platforms</h4>
+
+  <div class="search-wrapper">
+    <div class="search-bar">
+      <div class="search-section">
+        <i class="fa-solid fa-gamepad"></i>
+        <input type="text" placeholder="Search your favorite game..." />
+      </div>
+      <div class="search-section">
+        <i class="fa-solid fa-calendar-days"></i>
+        <input type="text" placeholder="Release Date" />
+      </div>
+      <div class="search-section">
+        <i class="fa-solid fa-tags"></i>
+        <input type="text" placeholder="Genre or Platform" />
+      </div>
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i> Search
+      </button>
+    </div>
+  </div>
+
+  <div class="logos-container">
+    <a href="https://store.steampowered.com/" target="_blank"><img src="logo/steam.png" alt="Steam" /></a>
+    <a href="https://store.epicgames.com/" target="_blank"><img src="logo/epicgames.png" alt="Epic Games" /></a>
+    <a href="https://www.g2a.com/" target="_blank"><img src="logo/g2a.png" alt="G2A" /></a>
+    <a href="https://www.instant-gaming.com/" target="_blank"><img src="logo/instantgaming.png" alt="Instant Gaming" /></a>
+    <a href="https://www.riotgames.com/" target="_blank"><img src="logo/riotgames.png" alt="Riot Games" /></a>
+    <a href="https://www.eneba.com/" target="_blank"><img src="logo/eneba.png" alt="Eneba" /></a>
+    <a href="https://www.weplay.cl/" target="_blank"><img src="logo/weplaystore.png" alt="WePlay Store" /></a>
+    <span class="more-link">+ more</span>
+  </div>
+
+  <div class="info-boxes">
+    <div class="info-box">
+      <img src="logo/logo busqueda.png" alt="Search Icon" class="info-icon"> 
+      <h3>Search easily</h3>
+      <p>Easily search among millions of hotels in seconds.</p>
+    </div>
+    <div class="info-box">
+      <img src="logo/compara.png" alt="Compare Icon" class="info-icon"> 
+      <h3>Compare with confidence</h3>
+      <p>Compare hotel prices from over 100 websites at the same time.</p>
+    </div>  
+    <div class="info-box">
+      <img src="logo/ahorra.png" alt="Save Icon" class="info-icon"> 
+      <h3>Save big</h3>
+      <p>Discover incredible deals on our partner websites.</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top: 50px; color: #000;">Top game deals right now</h2>
+
+  <div class="game-cards">
+    <div class="game-card">
+      <img src="logo/Tapa-GTA-V.jpg" alt="GTA V" />
+      <div class="game-info">
+        <h3>Grand Theft Auto V</h3>
+        <span class="rating">⭐ 9.5 - Rockstar Games</span>
+        <span class="location">Available on PC, PS4, Xbox</span>
+        <div class="discount-tag">35% off</div>
+        <span class="store-name">Steam</span>
+        <div class="price">$19.49 <small>USD</small></div>
+        <span class="dates">Ends Jul 15</span>
+        <a href="gtaV.html" class="offer-button">View Deal</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="logo/portadaeldenring22.jpg" alt="Elden Ring" />
+      <div class="game-info">
+        <h3>Elden Ring</h3>
+        <span class="rating">⭐ 9.2 - Bandai Namco</span>
+        <span class="location">PC, PS5, Xbox</span>
+        <div class="discount-tag">25% off</div>
+        <span class="store-name">Green Man Gaming</span>
+        <div class="price">$44.99 <small>USD</small></div>
+        <span class="dates">Ends Jul 12</span>
+        <a href="eldenring.html" class="offer-button">View Deal</a>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="logo/images.jpeg" alt="Minecraft" />
+      <div class="game-info">
+        <h3>Minecraft Java & Bedrock</h3>
+        <span class="rating">⭐ 8.8 - Mojang</span>
+        <span class="location">PC, Mobile</span>
+        <div class="discount-tag">15% off</div>
+        <span class="store-name">Microsoft Store</span>
+        <div class="price">$25.49 <small>USD</small></div>
+        <span class="dates">Ends Jul 20</span>
+        <a href="minecraft.html" class="offer-button">View Deal</a>
+      </div>  
+    </div>
+    <!-- The Witcher 3 -->
+<div class="game-card">
+  <img src="logo/thewitcher.png"alt="The Witcher 3" />
+  <div class="game-info">
+    <h3>The Witcher 3: Wild Hunt</h3>
+    <span class="rating">⭐ 9.3 - CD Projekt</span>
+    <span class="location">PC, PS4, Xbox</span>
+    <div class="discount-tag">50% off</div>
+    <span class="store-name">GOG</span>
+    <div class="price">$14.99 <small>USD</small></div>
+    <span class="dates">Ends Jul 25</span>
+    <a href="thewitcher.html" class="offer-button">View Deal</a>
+    </a>
+  </div>
+</div>
+
+<!-- Red Dead Redemption 2 -->
+<div class="game-card">
+  <img src="logo/RDR.jpg" alt="Red Dead Redemption 2" />
+  <div class="game-info">
+    <h3>Red Dead Redemption 2</h3>
+    <span class="rating">⭐ 9.7 - Rockstar Games</span>
+    <span class="location">PC, PS4, Xbox</span>
+    <div class="discount-tag">40% off</div>
+    <span class="store-name">Epic Games</span>
+    <div class="price">$35.99 <small>USD</small></div>
+    <span class="dates">Ends Jul 30</span>
+    <a href="red-dead.html" class="offer-button">View Deal</a>
+    </a>
+  </div>
+</div>
+
+<!-- Hollow Knight -->
+<div class="game-card">
+  <img src="logo/hollowknight.jpg" alt="Hollow Knight" />
+  <div class="game-info">
+    <h3>Hollow Knight</h3>
+    <span class="rating">⭐ 9.0 - Team Cherry</span>
+    <span class="location">PC, Switch, PS4</span>
+    <div class="discount-tag">33% off</div>
+    <span class="store-name">Steam</span>
+    <div class="price">$9.99 <small>USD</small></div>
+    <span class="dates">Ends Aug 1</span>
+    <a href="hollow.html" class="offer-button">View Deal</a>
+    </a>
+  </div>
+</div>
+
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+<section class="linkera-facts">
+  <h3>How Linkera Works</h3>
+  <ul>
+    <li>If users compare prices, they always find the best deal.</li>
+    <li>If you search for a game, we show results from different stores.</li>
+    <li>If a game is trending, we highlight it on the homepage.</li>
+    <li>If a store runs out of stock, we remove the game from the search results.</li>
+    <li>If a game has a discount, we notify our users instantly.</li>
+    <li>If you follow us, you get special notifications.</li>
+    <li>If you use this promo code, you save 20% on your next purchase.</li>
+  </ul>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="logo/Imagen.png" alt="Linkera Logo" class="footer-logo" />
+      <select class="footer-select">
+        <option value="cl">🇨🇱 Chile</option>
+        <option value="us">🇺🇸 United States</option>
+        <option value="uk">🇬🇧 United Kingdom</option>
+      </select>
+
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Mobile app</a></li>
+          <li><a href="#">For developers</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">How Linkera works</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Legal information</a></li>
+          <li><a href="#">Privacy notice</a></li>
+          <li><a href="#">Cybersecurity</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p><strong>Want exclusive game inspiration?</strong><br>Subscribe to our newsletter.</p>
+      <form class="newsletter">
+        <input type="email" placeholder="Email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <p class="copyright">
+        Linkera Inc., Iquique, Chile<br>
+        &copy; 2025 Linkera | All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</html>
